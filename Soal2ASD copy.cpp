@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+struct Kendaraan {
+    char plat[15];
+    char jenis[20];
+    char pemilik[30];
+    char alamat[50];
+    char kota[20];
+};
+
+int main() {
+
+    Kendaraan mobil;
+
+    strcpy(mobil.plat, "DA1234MK");
+    strcpy(mobil.jenis, "RUSH");
+    strcpy(mobil.pemilik, "Andika Hartanto");
+    strcpy(mobil.alamat, "Jl. Kayu Tangi 1");
+    strcpy(mobil.kota, "Banjarmasin");
+
+    cout << "a. Plat Nomor Kendaraan : " << mobil.plat << endl;
+    cout << "b. Jenis Kendaraan      : " << mobil.jenis << endl;
+    cout << "c. Nama Pemilik         : " << mobil.pemilik << endl;
+    cout << "d. Alamat               : " << mobil.alamat << endl;
+    cout << "e. Kota                 : " << mobil.kota << endl;
+
+    return 0;
+}
